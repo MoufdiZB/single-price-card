@@ -1,0 +1,115 @@
+*,*::after, *::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-family: "Tilt Neon", cursive;
+  color: white;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content:center; 
+  align-items: center;
+}
+
+.contair-1 {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 12px 12px 12px hsl(204, 43%, 93%);
+  border-radius: 10px;
+  padding: 1rem;
+  overflow: hidden;
+  max-width: 24rem;
+}
+
+.box1 {
+  background-color: white;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.join {
+  color: hsl(179, 62%, 43%);
+  font-size: 1.35rem;
+  font-weight: 500;
+}
+.free {
+  color: hsl(71, 73%, 54%);
+  font-size: 1.07rem;
+  font-weight: 500;
+}
+.free-detail {
+  color:   hsl(218, 22%, 67%)
+}
+.contair-2 {
+  display: flex;
+  flex-direction: column;
+}
+.box2 {
+  background-color: hsl(179, 62%, 43%);
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  flex-basis: 100%;
+}
+span {
+  font-weight: 600;
+  font-size: 1.9rem;
+  color: white;
+}
+.month {
+  color: hsl(204, 43%, 93%);
+}
+.full-access {
+  color: rgba(229, 239, 245,3);
+}
+button {
+    color: white;
+  box-shadow: 2px 2px 2px  rgb(95, 95, 95);
+  border-radius: 5px;
+  width: 90%;
+  background-color:hsl(71, 73%, 54%);
+  font-weight: bold;
+  padding: 0.5rem;
+  border: none;
+}
+button:hover{
+    background-color: white;
+    color: hsl(71, 73%, 54%);
+}
+.box3 {
+  background-color: hsl(179, 43%, 56%);
+  padding: 2rem;
+  flex-basis: 100%;
+}
+.why-us,
+.sub {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.why-us-detail {
+  color: rgba(252, 233, 233, 0.815);
+  font-size: 0.8rem;
+  line-height: 150%;
+  max-width: 80%;
+}
+
+@media  screen and (600px<width ) {
+  .contair-1 {
+    max-width: 30rem;
+  }
+  .contair-2 {
+    flex-direction: row;
+  }
+  .box2 {
+    flex-basis: 50%;
+  }
+  .box3 {
+    flex-basis: 50%;
+  }
+}
